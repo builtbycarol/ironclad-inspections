@@ -694,6 +694,93 @@
     }
 
     /* ==============================================================
+       INCLUDED WITH EVERY INSPECTION SECTION
+       ============================================================== */
+    #included {
+      padding: var(--section-pad);
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .included-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .included-header {
+      margin-bottom: 48px;
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .included-card {
+      background: var(--navy-mid);
+      border: 1px solid rgba(155, 170, 184, 0.15);
+      border-top: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: var(--transition);
+    }
+
+    .included-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .included-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      color: var(--gold);
+    }
+
+    .included-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .included-tag {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .included-title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .included-desc {
+      font-size: 0.9rem;
+      color: var(--silver);
+      line-height: 1.65;
+    }
+
+    /* ==============================================================
        SERVICE AREA SECTION
        ============================================================== */
     #service-area {
@@ -1102,10 +1189,32 @@
       max-width: var(--max-width);
       margin: 0 auto;
       display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .footer-row {
+      display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 20px;
+    }
+
+    .footer-badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(201, 168, 76, 0.12);
+    }
+
+    .footer-badges img {
+      height: 65px;
+      width: auto;
+      display: block;
     }
 
     .footer-logo {
@@ -1229,7 +1338,7 @@
         height: 280px;
       }
 
-      .footer-inner {
+      .footer-row {
         flex-direction: column;
         text-align: center;
       }
