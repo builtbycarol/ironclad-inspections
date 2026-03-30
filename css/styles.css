@@ -1010,23 +1010,25 @@
     }
 
     /* ==============================================================
-       CONTACT / CALLBACK SECTION
+       CONTACT SECTION
        ============================================================== */
     #contact {
       padding: var(--section-pad);
       background: var(--navy);
+      text-align: center;
     }
 
     .contact-inner {
-      max-width: var(--max-width);
+      max-width: 560px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 60px;
-      align-items: start;
     }
 
-    .contact-form-col {}
+    .contact-intro-text {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 8px;
+    }
 
     /* Form styles */
     .callback-form {
@@ -1112,22 +1114,15 @@
       font-size: 1rem;
     }
 
-    /* Contact info column */
-    .contact-info-col {}
-
-    .contact-info-col .section-label {
-      margin-bottom: 6px;
-    }
-
-    .contact-info-col .section-heading--light {
-      margin-bottom: 8px;
-    }
-
     .contact-detail-list {
       margin-top: 28px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
     }
 
     .contact-detail {
@@ -1325,8 +1320,7 @@
       }
 
       .about-inner,
-      .area-inner,
-      .contact-inner {
+      .area-inner {
         grid-template-columns: 1fr;
       }
 
@@ -1669,6 +1663,10 @@
 
     .faq-header .gold-rule {
       margin: 16px auto 0;
+    }
+
+    #contact .gold-rule {
+      margin: 16px auto 24px;
     }
 
     .faq-list {
