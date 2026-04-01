@@ -1295,8 +1295,18 @@
       }
 
       .hero-badge {
-        bottom: -10px;
-        left: 10px;
+        top: -10px;
+        right: -10px;
+        padding: 8px 10px;
+        gap: 8px;
+      }
+
+      .hero-badge img {
+        height: 32px !important;
+      }
+
+      .hero-badge span {
+        font-size: 0.85rem !important;
       }
 
       .about-inner,
