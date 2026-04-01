@@ -331,24 +331,7 @@
        ============================================================== */
     #hero {
       min-height: 100vh;
-      background:
-        /* Subtle diagonal brushed-metal gradient overlay */
-        linear-gradient(
-          135deg,
-          rgba(15, 30, 60, 0.97) 0%,
-          rgba(15, 30, 60, 0.90) 40%,
-          rgba(22, 36, 68, 0.95) 70%,
-          rgba(8, 15, 30, 0.98) 100%
-        ),
-        /* Steel texture: repeating thin lines */
-        repeating-linear-gradient(
-          90deg,
-          transparent,
-          transparent 3px,
-          rgba(255,255,255,0.015) 3px,
-          rgba(255,255,255,0.015) 6px
-        );
-      background-color: var(--navy-dark);
+      background-color: var(--navy);
       display: flex;
       align-items: center;
       padding-top: var(--nav-height);
@@ -383,7 +366,7 @@
     .hero-inner {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 5px 20px 60px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
@@ -487,18 +470,15 @@
     /* Floating badge on hero image */
     .hero-badge {
       position: absolute;
-      bottom: -20px;
-      left: -20px;
-      background: var(--gold);
-      color: var(--navy-dark);
-      padding: 16px 20px;
+      top: -20px;
+      right: -20px;
+      background: rgba(8, 15, 30, 0.96);
+      padding: 14px 18px;
       border-radius: var(--radius);
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
       box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
     .hero-badge .number {
