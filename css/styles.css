@@ -1199,6 +1199,7 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--white);
+      text-align: center;
     }
 
     .footer-logo span {
@@ -1209,6 +1210,7 @@
       font-size: 0.8rem;
       color: var(--silver);
       margin-top: 4px;
+      text-align: center;
     }
 
     .footer-links {
