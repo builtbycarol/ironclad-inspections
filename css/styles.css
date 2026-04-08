@@ -471,7 +471,7 @@
     .hero-badge {
       position: absolute;
       top: -20px;
-      right: -20px;
+      right: 0;
       background: rgba(8, 15, 30, 0.96);
       padding: 14px 18px;
       border-radius: var(--radius);
@@ -1343,7 +1343,7 @@
 
       .hero-badge {
         top: -10px;
-        right: -10px;
+        right: 0;
         padding: 8px 10px;
         gap: 8px;
       }
