@@ -1221,20 +1221,31 @@
       gap: 20px;
     }
 
+    .footer-license {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--silver);
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(201, 168, 76, 0.12);
+    }
+
     .footer-badges {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 16px;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(201, 168, 76, 0.12);
+      margin-top: 12px;
     }
 
     .footer-badges img {
       height: 65px;
       width: auto;
       display: block;
+    }
+
+    .footer-badges img[alt="Consumer Protection BC"] {
+      border-radius: 9px;
     }
 
     .footer-logo {
