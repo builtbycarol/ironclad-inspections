@@ -35,6 +35,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Ads Global Site Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18055064219"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18055064219');
+  </script>
 </head>
 
 <body>
@@ -534,12 +543,11 @@
         <!-- ======================================================
              STATE 1: LAUNCH (currently active — 0 reviews)
              Comment out this block when switching to State 2 or 3.
-             ====================================================== -->
+             ======================================================
         <div class="testimonials-launch">
 
           <div class="testimonials-launch-card">
 
-            <!-- Handshake / trust icon -->
             <div class="testimonials-launch-icon" aria-hidden="true">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
             </div>
@@ -556,10 +564,6 @@
 
             <div class="testimonials-launch-actions">
               <a href="#booking" class="btn btn-primary">Book Your Inspection</a>
-              <!--
-                PLACEHOLDER: Replace href with Mike's actual Google Business Profile review link.
-                Example: https://g.page/r/XXXXXXXXXX/review
-              -->
               <a href="https://g.page/r/CVsH3LIIgYfjEBM/review" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                 Leave Us a Review
               </a>
@@ -567,45 +571,34 @@
 
           </div>
 
-
         </div>
-        <!-- END STATE 1 -->
+             END STATE 1 -->
 
 
         <!-- ======================================================
              STATE 2: EARLY (1–2 reviews)
-             Uncomment this block and comment out STATE 1 above
-             when Mike has 1–2 real reviews to show.
+             ====================================================== -->
+        <div class="testimonials-grid" style="display:flex;justify-content:center;">
 
-             The .testimonials-grid is auto-fill minmax(300px, 1fr)
-             so 1 or 2 cards fill naturally without gaps looking empty.
-
-        <div class="testimonials-grid">
-
-          <article class="testimonial-card">
+          <article class="testimonial-card" style="max-width:400px;width:100%;">
             <div class="testimonial-stars stars" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-quote">
-              "[PLACEHOLDER: First real client quote]"
+              "We messaged Mike and he was able to do a home inspection the next day. He was very thorough and explained everything in the walk through with us and was available for questions even after the inspection and walk through. His report is also very detailed and easy to read. Would highly recommend his services to friends and family. We felt very reassured that the home was checked properly!"
             </blockquote>
             <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">[A]</div>
+              <div class="testimonial-avatar" aria-hidden="true">J</div>
               <div>
-                <div class="testimonial-name">[PLACEHOLDER: Client Name]</div>
-                <div class="testimonial-context">[PLACEHOLDER: Service type, location]</div>
+                <div class="testimonial-name"><a href="https://maps.app.goo.gl/42ssuFarso44SEmR7" target="_blank" rel="noopener noreferrer">Jem</a></div>
+                <div class="testimonial-context">Google Review · May 2026</div>
               </div>
             </div>
           </article>
 
         </div>
 
-        <div style="text-align:center;margin-top:24px;">
-          <a href="[PLACEHOLDER: Google Business Profile review link]"
-             target="_blank" rel="noopener noreferrer"
-             class="testimonials-google-link">
-            [PLACEHOLDER: See all our reviews on Google]
-          </a>
+        <div style="text-align:center;margin-top:40px;">
+          <a href="https://g.page/r/CVsH3LIIgYfjEBM/review" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Leave Us a Review</a>
         </div>
-             END STATE 2 -->
 
 
         <!-- ======================================================
@@ -913,6 +906,7 @@
         <img src="images/poweredbybadge.png" alt="Powered by Spectora" />
         <img src="images/spectorareportbadge.png" alt="Spectora Report" />
         <img src="images/consumerprotectionbadge.png" alt="Consumer Protection BC" />
+        <img src="images/CAHPI.png" alt="CAHPI Certified" style="background:#fff;border-radius:6px;padding:4px;" />
       </div>
 
     </div>
