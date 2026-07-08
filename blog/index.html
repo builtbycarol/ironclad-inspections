@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Ironclad Inspections — Prince George Home Inspector</title>
+  <meta name="description" content="Guides and resources for Prince George homebuyers from Ironclad Inspections. Home inspection tips, what to expect, and how to choose the right inspector." />
+  <link rel="canonical" href="https://ironcladinspections.ca/blog/" />
+
+  <meta property="og:title" content="Blog | Ironclad Inspections — Prince George Home Inspector" />
+  <meta property="og:description" content="Guides and resources for Prince George homebuyers from Ironclad Inspections." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ironcladinspections.ca/blog/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #1a1a1a;
+      --white: #ffffff;
+      --gold: #b8952a;
+      --gold-light: #f0e6c4;
+      --grey-bg: #f7f7f5;
+      --grey-mid: #e8e8e4;
+      --grey-text: #666660;
+      --max: 720px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--black);
+      background: var(--white);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    nav {
+      background: var(--black);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    nav .logo span { color: var(--gold); }
+    nav a.cta-nav {
+      background: var(--gold);
+      color: var(--black);
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .breadcrumb {
+      background: var(--grey-bg);
+      padding: 12px 24px;
+      font-size: 0.82rem;
+      color: var(--grey-text);
+    }
+    .breadcrumb a { color: var(--grey-text); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--gold); }
+
+    .blog-header {
+      background: var(--black);
+      color: var(--white);
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    .blog-header .category {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .blog-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto 20px;
+    }
+    .blog-header .subtitle {
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 16px;
+    }
+
+    .blog-cards {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 56px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .blog-card {
+      background: var(--white);
+      border: 1px solid var(--grey-mid);
+      border-radius: 6px;
+      padding: 28px;
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .blog-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    }
+    .blog-card .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      margin-bottom: 10px;
+    }
+    .blog-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .blog-card p {
+      font-size: 0.92rem;
+      color: var(--grey-text);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .blog-card .read-more {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .cta-footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 64px 24px;
+    }
+    .cta-footer h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .cta-footer p { color: #aaa; max-width: 460px; margin: 0 auto 28px; }
+    .cta-footer .phone {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.82rem;
+    }
+    footer a { color: #aaa; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .blog-cards { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="https://ironcladinspections.ca">Ironclad <span>Inspections</span></a>
+    <a class="cta-nav" href="https://ironcladinspections.ca/#booking">Book Now</a>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="https://ironcladinspections.ca">Home</a> &rsaquo; Blog
+  </div>
+
+  <div class="blog-header">
+    <span class="category">Ironclad Inspections · Prince George, BC</span>
+    <h1>Blog</h1>
+    <div class="subtitle">Guides and resources for Prince George homebuyers</div>
+  </div>
+
+  <div class="blog-cards">
+
+    <a class="blog-card" href="/blog/what-to-expect-home-inspection-prince-george">
+      <div class="tag">Homebuyer's Guide</div>
+      <h3>What to Expect During a Home Inspection in Prince George</h3>
+      <p>Your step-by-step guide to what happens before, during, and after a home inspection in Prince George.</p>
+      <span class="read-more">Read article &rarr;</span>
+    </a>
+
+    <a class="blog-card" href="/blog/pre-purchase-inspection-prince-george">
+      <div class="tag">Homebuyer's Guide</div>
+      <h3>Pre-Purchase Inspections in Prince George</h3>
+      <p>Protect your investment with a thorough evaluation before you commit to the purchase.</p>
+      <span class="read-more">Read article &rarr;</span>
+    </a>
+
+    <a class="blog-card" href="/blog/how-to-choose-home-inspector-prince-george">
+      <div class="tag">Homebuyer's Guide</div>
+      <h3>How to Choose a Home Inspector in Prince George BC</h3>
+      <p>Credentials, experience, equipment, and the right questions to ask before booking.</p>
+      <span class="read-more">Read article &rarr;</span>
+    </a>
+
+  </div>
+
+  <div class="cta-footer">
+    <h2>Book Your Prince George Home Inspection</h2>
+    <p>Questions before booking? Call Mike directly — he's happy to talk through your specific property.</p>
+    <a class="phone" href="tel:+12506495522">(250) 649-5522</a>
+    <a class="btn-primary" href="https://ironcladinspections.ca/#booking">Book Online</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Ironclad Inspections · Prince George, BC · Licensed Inspector #89905 · <a href="https://ironcladinspections.ca">ironcladinspections.ca</a></p>
+    <p style="margin-top: 8px;">Serving Prince George, Quesnel, Vanderhoof &amp; surrounding Northern BC communities.</p>
+  </footer>
+
+</body>
+</html>
