@@ -808,6 +808,20 @@
       text-decoration: underline;
     }
 
+    .included-learn-more {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .included-learn-more:hover {
+      text-decoration: underline;
+    }
+
     /* ==============================================================
        SERVICE AREA SECTION
        ============================================================== */
