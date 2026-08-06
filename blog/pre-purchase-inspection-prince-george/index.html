@@ -241,30 +241,25 @@
     }
 
     /* ABOUT MIKE */
-    .about-mike { background: var(--grey-bg); }
-    .mike-inner {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 48px;
-      align-items: center;
-    }
-    .mike-photo-placeholder {
-      background: var(--grey-mid);
+    .author-bio {
+      background: var(--grey-bg);
+      border: 1px solid var(--grey-mid);
       border-radius: 6px;
-      aspect-ratio: 3/4;
-      width: 100%;
+      padding: 28px;
+      margin: 48px 0 0;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      flex-shrink: 0;
       object-fit: cover;
-      display: block;
     }
-    .mike-inner blockquote {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      color: var(--black);
-      border-left: 3px solid var(--gold);
-      padding-left: 20px;
-      margin: 24px 0;
-    }
+    .author-bio h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .author-bio p { font-size: 0.88rem; color: var(--grey-text); margin: 0; }
 
     /* PRICING CALLOUT */
     .pricing-callout {
@@ -357,8 +352,7 @@
     .breadcrumb a:hover { color: var(--gold); }
 
     @media (max-width: 600px) {
-      .mike-inner { grid-template-columns: 1fr; }
-      .mike-photo-placeholder { display: none; }
+      .author-bio { flex-direction: column; }
       section { padding: 48px 20px; }
     }
   </style>
@@ -508,18 +502,14 @@
     </div>
   </section>
 
-  <!-- ABOUT MIKE -->
-  <section class="about-mike">
+  <!-- AUTHOR BIO -->
+  <section>
     <div class="container">
-      <div class="mike-inner">
-        <img src="/images/mike-about.png" alt="Mike Webber — Home Inspector, Ironclad Inspections" class="mike-photo-placeholder" />
+      <div class="author-bio">
+        <img class="author-avatar" src="/images/mike-about.png" alt="Mike Webber — Ironclad Inspections" width="60" height="60" loading="lazy" />
         <div>
-          <div class="section-label">Your Inspector</div>
-          <h2>Mike Webber — Prince George's Home Inspector</h2>
-          <blockquote>"I'm not here to just check boxes. I'm here to make sure you actually understand what you're buying."</blockquote>
-          <p>Mike brings 15+ years of hands-on trades experience to every inspection. He grew up understanding how buildings go together — which means he knows exactly how and where they fail.</p>
-          <p>Ironclad Inspections is independently owned and operated right here in Prince George. When you hire Mike, you get Mike — not a franchise inspector following a script.</p>
-          <p>CanNACHI Certified · Licensed Inspector #89905 · Consumer Protection BC Registered</p>
+          <h4>Mike Webber — Ironclad Inspections</h4>
+          <p>Mike is a CanNACHI Certified and MICRO Certified Mold Inspector based in Prince George, BC, with 15+ years of hands-on trades experience. Ironclad Inspections serves Prince George, Quesnel, Vanderhoof, and surrounding Northern BC communities. Licensed Inspector #89905.</p>
         </div>
       </div>
     </div>

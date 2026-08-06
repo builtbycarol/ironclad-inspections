@@ -255,6 +255,26 @@
     .faq-q { font-weight: 700; color: var(--black); margin-bottom: 6px; }
     .faq-a { font-size: 0.95rem; color: var(--grey-text); }
 
+    .author-bio {
+      background: var(--grey-bg);
+      border: 1px solid var(--grey-mid);
+      border-radius: 6px;
+      padding: 28px;
+      margin: 48px 0 0;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .author-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .author-bio h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .author-bio p { font-size: 0.88rem; color: var(--grey-text); margin: 0; }
+
     .cta-footer {
       background: var(--black);
       color: var(--white);
@@ -301,6 +321,7 @@
       .step-block { flex-direction: column; gap: 8px; }
       .article-body table { font-size: 0.85rem; }
       .article-body th, .article-body td { padding: 10px 12px; }
+      .author-bio { flex-direction: column; }
     }
   </style>
 </head>
@@ -452,6 +473,14 @@
       <div class="faq-item">
         <div class="faq-q">Can I buy a house with a wood foundation?</div>
         <div class="faq-a">Yes, but you must ensure a thorough inspection. A home inspector using thermal imaging can check for hidden moisture anomalies behind finished basement walls that might indicate a compromised exterior seal.</div>
+      </div>
+    </div>
+
+    <div class="author-bio">
+      <img class="author-avatar" src="/images/mike-about.png" alt="Mike Webber — Ironclad Inspections" width="60" height="60" loading="lazy" />
+      <div>
+        <h4>Mike Webber — Ironclad Inspections</h4>
+        <p>Mike is a CanNACHI Certified and MICRO Certified Mold Inspector based in Prince George, BC, with 15+ years of hands-on trades experience. Ironclad Inspections serves Prince George, Quesnel, Vanderhoof, and surrounding Northern BC communities. Licensed Inspector #89905.</p>
       </div>
     </div>
 
