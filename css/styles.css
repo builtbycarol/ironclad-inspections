@@ -239,9 +239,15 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 18px;  /* reduced from 28px to fit extra links */
+      gap: 14px;  /* reduced from 28px to fit extra links */
       flex: 1;
       justify-content: center;
+      min-width: 0;
+    }
+
+    .nav-links li {
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     .nav-links a {
@@ -623,6 +629,22 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 24px;
+    }
+
+    .section-view-more {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .view-more-link {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .view-more-link:hover {
+      text-decoration: underline;
     }
 
     .service-card {
@@ -1496,6 +1518,24 @@
     }
 
     /* ==============================================================
+       RESPONSIVE — NAV COLLAPSE (601px – 1024px)
+       With 8 nav items, there isn't enough room for the full desktop
+       nav between the mobile breakpoint and ~1000px, so the hamburger
+       menu takes over slightly earlier than the rest of the mobile
+       layout does.
+       ============================================================== */
+    @media (max-width: 1024px) and (min-width: 601px) {
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
+      }
+    }
+
+    /* ==============================================================
        RESPONSIVE — MOBILE (≤ 600px)
        ============================================================== */
     @media (max-width: 600px) {
@@ -2117,5 +2157,48 @@
 
     .skip-link:focus {
       top: 16px;
+    }
+
+    /* ==============================================================
+       RETURN TO TOP BUTTON
+       ============================================================== */
+    #back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--navy-dark);
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #back-to-top:hover {
+      background: var(--gold);
+      color: var(--navy-dark);
+    }
+
+    @media (max-width: 600px) {
+      #back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 16px;
+        right: 16px;
+      }
     }
 

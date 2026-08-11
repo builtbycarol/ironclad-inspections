@@ -79,6 +79,7 @@
         <li><a href="#about">Why Ironclad</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="/mold-inspection/">Mold Inspection</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -118,6 +119,7 @@
     <a href="#about" class="mobile-nav-link">Why Ironclad</a>
     <a href="/blog/" class="mobile-nav-link">Blog</a>
     <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="/mold-inspection/" class="mobile-nav-link">Mold Inspection</a>
     <a href="#pricing" class="mobile-nav-link">Pricing</a>
     <a href="#service-area" class="mobile-nav-link">Service Area</a>
     <a href="#testimonials" class="mobile-nav-link">Reviews</a>
@@ -338,6 +340,10 @@
           </article>
 
         </div>
+
+        <div class="section-view-more">
+          <a href="/services/" class="view-more-link">View all services &rarr;</a>
+        </div>
       </div>
     </section>
 
@@ -456,32 +462,15 @@
             </div>
           </div>
 
-          <!-- Card 2: What's Included -->
-          <div class="pricing-card" style="grid-column: 1 / -1;">
-            <p class="pricing-card-label">What's Included</p>
-            <h3 class="pricing-card-title" style="color: var(--navy);">Every Inspection Covers</h3>
-            <span class="pricing-divider" aria-hidden="true"></span>
-            <p class="pricing-card-desc" style="color: var(--text-body);">Grounds, Exterior, Interior, Structure, Roof, Electrical, Plumbing, HVAC, Attic &amp; Crawlspace — plus a personal 30-minute walkthrough and a detailed digital report.</p>
-          </div>
-
-        </div>
-
-        <!-- Sample report link -->
-        <div class="sample-report-cta">
-          <p>Want to see what your report looks like?</p>
-          <a href="https://app.spectora.com/home-inspectors/my-inspection-company-870b723d1a/sample_report?sample_id=39017" target="_blank" rel="noopener noreferrer" class="sample-report-link">View a Sample Ironclad Inspection Report</a>
-        </div>
-
-        <!-- Call-to-action bar: phone quote prompt -->
-        <div class="pricing-cta-bar">
-          Not sure what you need? Call
-          <a href="tel:+12506495522">(250) 649-5522</a>
-          for a quick quote — or get one instantly online.
         </div>
 
         <!-- Get a Quote button -->
         <div style="text-align:center;margin-top:24px;">
           <button class="btn btn-primary" id="open-quote-modal" style="font-size:1.1rem;padding:16px 40px;">Get an Instant Quote</button>
+        </div>
+
+        <div class="section-view-more">
+          <a href="/pricing/" class="view-more-link">See full pricing breakdown &rarr;</a>
         </div>
 
       </div>
@@ -1237,6 +1226,24 @@
       startAuto();
     }());
 
+  </script>
+
+  <button id="back-to-top" aria-label="Return to top" title="Return to top">↑</button>
+  <script>
+  (function() {
+    var btn = document.getElementById('back-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > window.innerHeight) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
   </script>
 
 </body>
