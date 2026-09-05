@@ -573,17 +573,6 @@
       border-radius: 8px;
     }
 
-    /* PG Chamber widget container */
-    .badge-item--widget {
-      height: 100px;
-      min-width: 80px;
-      max-width: 180px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     @media (max-width: 600px) {
       .badge-grid-wrap {
         padding: 40px 16px 0;
@@ -596,10 +585,16 @@
       .badge-item img {
         height: 75px;
       }
+    }
 
-      .badge-item--widget {
-        height: 75px;
-      }
+    /* ── PG Chamber of Commerce membership ── */
+    .chamber-strip {
+      padding: 32px 24px 0;
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+      max-height: 220px;
+      overflow: hidden;
     }
 
     /* ── Education certifications strip ── */
@@ -1583,6 +1578,7 @@
 
     .footer-badges {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 16px;
@@ -1808,19 +1804,24 @@
        ============================================================== */
     @media (max-width: 768px) {
       .footer-badges {
+        display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         justify-content: flex-start;
-        padding: 8px 0;
+        gap: 16px;
+        padding-bottom: 8px;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
         scrollbar-width: none;
       }
       .footer-badges::-webkit-scrollbar {
         display: none;
       }
-      .footer-badges img {
+      .footer-badges img,
+      .footer-badges picture {
         flex-shrink: 0;
-        height: 44px !important;
+        height: 48px;
         width: auto;
       }
     }
