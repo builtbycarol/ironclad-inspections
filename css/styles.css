@@ -524,18 +524,28 @@
 
     /* ── Certification badge grid ── */
     .badge-grid-wrap {
-      padding: 24px 0 0;
-      margin-top: 16px;
+      padding: 48px 24px 0;
+      text-align: center;
+    }
+
+    .badge-grid-heading {
+      font-family: var(--font-display, 'Oswald', sans-serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-body, #666);
+      margin-bottom: 28px;
     }
 
     .badge-grid {
       max-width: 900px;
       margin: 0 auto;
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      gap: 16px;
+      gap: 24px 32px;
     }
 
     .badge-item {
@@ -543,7 +553,7 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      transition: var(--transition);
+      transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
     .badge-item:hover {
@@ -552,7 +562,7 @@
     }
 
     .badge-item img {
-      height: 65px;
+      height: 100px;
       width: auto;
       object-fit: contain;
       display: block;
@@ -565,9 +575,9 @@
 
     /* PG Chamber widget container */
     .badge-item--widget {
-      height: 65px;
-      min-width: 60px;
-      max-width: 120px;
+      height: 100px;
+      min-width: 80px;
+      max-width: 180px;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -576,21 +586,19 @@
 
     @media (max-width: 600px) {
       .badge-grid-wrap {
-        padding: 24px 0 0;
+        padding: 40px 16px 0;
       }
 
       .badge-grid {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+        gap: 16px 20px;
       }
 
       .badge-item img {
-        height: 50px;
+        height: 75px;
       }
 
       .badge-item--widget {
-        height: 50px;
+        height: 75px;
       }
     }
 
@@ -608,7 +616,7 @@
       justify-content: center;
       align-items: center;
       gap: 12px;
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       color: var(--text-body);
     }
 
@@ -617,7 +625,7 @@
     }
 
     .education-strip-inner img {
-      height: 64px;
+      height: 70px;
       width: auto;
     }
 
@@ -627,7 +635,50 @@
       }
 
       .education-strip-inner img {
-        height: 48px;
+        height: 52px;
+      }
+    }
+
+    /* ── Partner showcase ── */
+    .partner-strip {
+      padding: 32px 24px 0;
+      text-align: center;
+    }
+
+    .partner-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .partner-link:hover {
+      opacity: 0.85;
+    }
+
+    .partner-link img {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .partner-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-body, #666);
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 600px) {
+      .partner-strip {
+        padding: 24px 16px 0;
+      }
+
+      .partner-link img {
+        height: 56px;
       }
     }
 
