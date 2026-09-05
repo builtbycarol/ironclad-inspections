@@ -1818,6 +1818,9 @@
       .footer-badges::-webkit-scrollbar {
         display: none;
       }
+      .footer-badges > * {
+        flex-shrink: 0;
+      }
       .footer-badges img,
       .footer-badges picture {
         flex-shrink: 0;
