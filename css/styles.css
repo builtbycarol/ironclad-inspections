@@ -685,6 +685,14 @@
       margin-bottom: 28px;
     }
 
+    .photo-caption {
+      font-size: 0.8rem;
+      color: var(--text-body, #666);
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
     /* Value props / quick stats */
     .about-stats {
       display: grid;
