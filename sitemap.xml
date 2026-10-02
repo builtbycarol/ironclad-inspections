@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://ironcladinspections.ca/blog/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -59,6 +59,22 @@
   <url>
     <loc>https://ironcladinspections.ca/blog/mold-inspection-prince-george/</loc>
     <lastmod>2026-08-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ironcladinspections.ca/home-inspector-quesnel-bc</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ironcladinspections.ca/blog/winter-home-checklist-prince-george/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ironcladinspections.ca/blog/pre-listing-inspection-prince-george/</loc>
+    <lastmod>2026-10-01</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
