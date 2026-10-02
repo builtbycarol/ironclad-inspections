@@ -352,6 +352,49 @@
       .step-block { flex-direction: column; gap: 8px; }
       .author-bio { flex-direction: column; }
     }
+
+    /* ==============================================================
+       RETURN TO TOP BUTTON
+       ============================================================== */
+    #back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--black);
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #back-to-top:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    @media (max-width: 600px) {
+      #back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 16px;
+        right: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -527,5 +570,22 @@
     <p style="margin-top: 8px;">Serving Prince George, Quesnel, Vanderhoof &amp; surrounding Northern BC communities.</p>
   </footer>
 
+  <button id="back-to-top" aria-label="Return to top" title="Return to top">↑</button>
+  <script>
+  (function() {
+    var btn = document.getElementById('back-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > window.innerHeight) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+  </script>
 </body>
 </html>
